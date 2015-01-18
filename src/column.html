@@ -1,0 +1,8 @@
+<template>
+  <div class="col-sm-4" style="background-color: yellow;">
+  	${column.name}
+    <div class="row" repeat.for="widget of column.widgets">
+      <compose view-model="./widget" model.bind="widget"></compose>
+    </div>
+  </div>
+</template>

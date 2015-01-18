@@ -17,7 +17,7 @@ System.register(["aurelia-framework"], function (_export) {
 
         _prototypeProperties(NavBar, {
           annotations: {
-            value: function () {
+            value: function annotations() {
               return [new Property("router")];
             },
             writable: true,
