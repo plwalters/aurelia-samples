@@ -20,10 +20,19 @@ System.register(["./models"], function (_export) {
         _prototypeProperties(Column, null, {
           activate: {
             value: function activate(col) {
-              console.log(col.widgets);
               this.column.id = col.id;
               this.column.name = col.name;
               this.column.widgets = col.widgets;
+              this.column.width = col.width;
+            },
+            writable: true,
+            enumerable: true,
+            configurable: true
+          },
+          addWidget: {
+            value: function addWidget() {
+              console.log(this.column);
+              this.column.widgets.push(new Models.Widget());
             },
             writable: true,
             enumerable: true,

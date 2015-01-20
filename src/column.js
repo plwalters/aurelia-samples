@@ -6,10 +6,14 @@ export class Column {
   }
 
   activate(col) {
-    console.log(col.widgets);
-    //this.column = new AColumn(col.id, col.name, col.widgets);
     this.column.id = col.id;
     this.column.name = col.name;
     this.column.widgets = col.widgets;
+    this.column.width = col.width;
+  }
+
+  addWidget () {
+  	console.log(this.column);
+  	this.column.widgets.push(new Models.Widget());
   }
 }

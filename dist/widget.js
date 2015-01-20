@@ -1,9 +1,11 @@
-System.register([], function (_export) {
+System.register(["./models"], function (_export) {
   "use strict";
 
-  var _prototypeProperties, Widget;
+  var Models, _prototypeProperties, Widget;
   return {
-    setters: [],
+    setters: [function (_models) {
+      Models = _models.Models;
+    }],
     execute: function () {
       _prototypeProperties = function (child, staticProps, instanceProps) {
         if (staticProps) Object.defineProperties(child, staticProps);
@@ -12,17 +14,26 @@ System.register([], function (_export) {
 
       Widget = (function () {
         function Widget() {
-          this.widget = new AWidget();
+          this.widget = new Models.Widget();
         }
 
         _prototypeProperties(Widget, null, {
           activate: {
             value: function activate(widget) {
-              console.log(widget);
               this.widget.id = widget.id;
               this.widget.name = widget.name;
+              this.widget.width = widget.width;
+              this.widget.offset = 12 - parseInt(widget.width);
             },
             writable: true,
+            enumerable: true,
+            configurable: true
+          },
+          fullStyle: {
+            get: function (widget) {
+              console.log("getting style - ", widget);
+              return "(widget.offset !== 0 ? ' col-xs-offset-' + widget.offset : '')";
+            },
             enumerable: true,
             configurable: true
           }

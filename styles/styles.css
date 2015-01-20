@@ -19,3 +19,16 @@ section {
 .pictureDetail {
     max-width: 425px;
 }
+
+.column {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+.column > .row {
+    padding: 8px;
+}
+.widget {
+    background-color: white;
+    border: 1px solid black; 
+    padding: 2px;
+}
