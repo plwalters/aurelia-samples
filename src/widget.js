@@ -12,8 +12,4 @@ export class Widget {
     this.widget.offset = 12 - parseInt(widget.width);
   }
 
-  get fullStyle(widget) {
-  	console.log('getting style - ', widget);
-  	return `(widget.offset !== 0 ? ' col-xs-offset-' + widget.offset : '')`;
-  }
 }

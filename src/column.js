@@ -13,7 +13,6 @@ export class Column {
   }
 
   addWidget () {
-  	console.log(this.column);
   	this.column.widgets.push(new Models.Widget());
   }
 }

@@ -18,14 +18,6 @@ export class Welcome{
     ];
     this.selectedColumns = this.availableColumns[0];
 	}
-
-  get fullName(){
-    return `${this.firstName} ${this.lastName}`;
-  }
-
-  welcome(){
-    alert(`Welcome, ${this.fullName}!`);
-  }
 }
 
 class Option {
