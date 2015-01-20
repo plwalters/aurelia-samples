@@ -1,4 +1,10 @@
-# aurelia-skeleton-navigation
+# aurelia-layout
+
+*This is a fork of the skeleton app as of v.8*
+
+This layout app shows off the following features of Aurelia `compose` binding to give developers some ideas for how to utilize these features in their app.
+
+-------------------------
 
 This skeleton is part of the [Aurelia](http://www.aurelia.io/) platform. It sets up a standard navigation-style app using gulp to build your ES6 code with the 6to5 compiler. Karma/Jasmine testing is also configured.
 
@@ -24,7 +30,7 @@ To run the app, follow these steps.
   ```shell
   npm install -g jspm
   ```
-  > **Note:** jspm queries GitHub to install semver packages, but GitHub has a rate limit on anonymous API requests. It is advised that you configure jspm with your GitHub credentials in order to avoid problems. You can do this by executing `jspm endpoint config github` and following the prompts.
+  > **Note:** jspm queries GitHub to install server packages, but GitHub has a rate limit on anonymous API requests. It is advised that you configure jspm with your GitHub credentials in order to avoid problems. You can do this by executing `jspm endpoint config github` and following the prompts.
 5. Install the client-side dependencies with jspm:
 
   ```shell
@@ -43,22 +49,3 @@ To run the app, follow these steps.
 ```html
 <script src="jspm_packages/github/webcomponents/webcomponentsjs@0.5.2/HTMLImports.js"></script>
 ```
-
-## Running The Tests
-
-To run the unit tests, first ensure that you have followed the steps above in order to install all dependencies and successfully build the library. Once you have done that, proceed with these additional steps:
-
-1. Ensure that the [Karma](http://karma-runner.github.io/) CLI is installed. If you need to install it, use the following command:
-
-  ```shell
-  npm install -g karma-cli
-  ```
-2. You can now run the tests with this command:
-
-  ```shell
-  karma start
-  ```
-  
-## Contributing
-
-We'd love for you to contribute to our source code and to make this project even better than it is today! If this interests you, please begin by reading [our contributing guidelines](https://github.com/DurandalProject/about/blob/master/CONTRIBUTING.md). The contributing document will provide you with all the information you need to get started. Once you have read that, you will need to also [sign our CLA](http://goo.gl/forms/dI8QDDSyKR) before we can accepts a Pull Request from you. More information on the process is including in the [contributor's guide](https://github.com/DurandalProject/about/blob/master/CONTRIBUTING.md).
