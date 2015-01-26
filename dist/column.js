@@ -31,7 +31,6 @@ System.register(["./models"], function (_export) {
           },
           addWidget: {
             value: function addWidget() {
-              console.log(this.column);
               this.column.widgets.push(new Models.Widget());
             },
             writable: true,

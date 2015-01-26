@@ -3,7 +3,6 @@ class Column {
     this.id = id;
     this.name = name;
     this.widgets = widgets;
-    console.log(width);
     this.width = width ? width : '12';
   }
 }

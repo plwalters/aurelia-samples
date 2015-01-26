@@ -28,14 +28,6 @@ System.register(["./models"], function (_export) {
             writable: true,
             enumerable: true,
             configurable: true
-          },
-          fullStyle: {
-            get: function (widget) {
-              console.log("getting style - ", widget);
-              return "(widget.offset !== 0 ? ' col-xs-offset-' + widget.offset : '')";
-            },
-            enumerable: true,
-            configurable: true
           }
         });
 
