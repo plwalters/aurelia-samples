@@ -17,7 +17,7 @@ System.register(["aurelia-router"], function (_export) {
           this.router = router;
           this.router.configure(function (config) {
             config.title = "Aurelia";
-            config.map([{ route: ["", "layout"], moduleId: "layout", nav: true, title: "Compose" }, { route: ["markdown", "markdown.editor"], moduleId: "markdown.editor", nav: true, title: "Markdown" }]);
+            config.map([{ route: ["", "layout"], moduleId: "layout", nav: true, title: "Compose" }, { route: ["markdown", "markdown.editor"], moduleId: "markdown.editor", nav: true, title: "Markdown" }, { route: ["html", "html.render"], moduleId: "html.render", nav: true, title: "HTML Render" }]);
           });
         }
 

@@ -45,6 +45,7 @@
     "dependencies": {
       "aurelia-bootstrapper": "^0.8.0",
       "aurelia-http-client": "^0.4.1",
+      "aurelia-path": "^0.4.1",
       "aurelia-templating": "^0.8.6",
       "aurelia-templating-binding": "^0.7.2",
       "bootstrap": "^3.3.1",

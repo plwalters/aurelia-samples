@@ -15,9 +15,7 @@ System.register(["./models"], function (_export) {
         this.selectedColumns = this.availableColumns[0];
         this.showing = true;
         this.toggleShow = function () {
-          console.log("changing - ", this.showing);
           this.showing = !this.showing;
-          console.log(this.showing);
         };
       };
 

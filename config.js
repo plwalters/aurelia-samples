@@ -11,6 +11,7 @@ System.config({
   "map": {
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.9.2",
     "aurelia-http-client": "github:aurelia/http-client@0.4.3",
+    "aurelia-path": "github:aurelia/path@0.4.1",
     "aurelia-templating": "github:aurelia/templating@0.8.6",
     "aurelia-templating-binding": "github:aurelia/templating-binding@0.7.2",
     "bootstrap": "github:twbs/bootstrap@3.3.2",
@@ -109,6 +110,9 @@ System.config({
       "jquery": "github:components/jquery@2.1.3"
     },
     "npm:core-js@0.4.10": {
+      "process": "github:jspm/nodelibs-process@0.1.0"
+    },
+    "npm:sanitize-caja@0.1.2": {
       "process": "github:jspm/nodelibs-process@0.1.0"
     }
   }
