@@ -45,9 +45,13 @@
     "dependencies": {
       "aurelia-bootstrapper": "^0.8.0",
       "aurelia-http-client": "^0.4.1",
+      "aurelia-templating": "^0.8.6",
       "aurelia-templating-binding": "^0.7.2",
       "bootstrap": "^3.3.1",
-      "font-awesome": "^4.2.0"
+      "font-awesome": "^4.2.0",
+      "knockout": "github:knockout/knockout@3.2.0",
+      "prism": "gh-pages",
+      "showdown": "^0.3.4"
     }
   }
 }

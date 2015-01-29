@@ -17,6 +17,12 @@ export class Welcome{
                   new Models.Column(3, 'Column 3', [new Models.Widget('3', 'Widget 3', '12')], '4')])
     ];
     this.selectedColumns = this.availableColumns[0];
+    this.showing = true;
+    this.toggleShow = function () {
+      console.log('changing - ', this.showing);
+      this.showing = !this.showing;
+      console.log(this.showing);
+    }
 	}
 }
 

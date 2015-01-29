@@ -72,6 +72,12 @@ gulp.task('build-html', function () {
     .pipe(browserSync.reload({ stream: true }));
 });
 
+gulp.task('build-amd', function () {
+  return gulp.src(path.source)
+    .pipe(to5(assign({}, compilerOptions, {modules:'amd'})))
+    .pipe(gulp.dest(path.output + 'amd'));
+});
+
 gulp.task('lint', function() {
   return gulp.src(path.source)
     .pipe(jshint(jshintConfig))
@@ -109,7 +115,7 @@ gulp.task('changelog', function(callback) {
 gulp.task('build', function(callback) {
   return runSequence(
     'clean',
-    ['build-system', 'build-html'],
+    ['build-system', 'build-html', 'build-amd'],
     callback
   );
 });
