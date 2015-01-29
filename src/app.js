@@ -9,7 +9,8 @@ export class App {
       config.map([
         { route: ['','layout'],  moduleId: 'layout',      nav: true, title:'Compose' },
         { route: ['markdown','markdown.editor'],  moduleId: 'markdown.editor',      nav: true, title:'Markdown' },
-        { route: ['html','html.render'],  moduleId: 'html.render',      nav: true, title:'HTML Render' }
+        { route: ['html','html.render'],  moduleId: 'html.render',      nav: true, title:'HTML Render' },
+        { route: ['knockout'],  moduleId: 'knockout',      nav: true, title:'Knockout' }
       ]);
     });
   }

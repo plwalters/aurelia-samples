@@ -16,7 +16,9 @@ System.config({
     "aurelia-templating-binding": "github:aurelia/templating-binding@0.7.2",
     "bootstrap": "github:twbs/bootstrap@3.3.2",
     "font-awesome": "npm:font-awesome@4.2.0",
-    "knockout": "github:knockout/knockout@3.2.0",
+    "handlebars": "npm:handlebars@2.0.0",
+    "jquery": "npm:jquery@2.1.3",
+    "knockout": "npm:knockout@3.2.0",
     "prism": "github:LeaVerou/prism@gh-pages",
     "showdown": "github:showdownjs/showdown@0.3.4",
     "github:aurelia/binding@0.3.2": {
@@ -102,18 +104,89 @@ System.config({
       "aurelia-task-queue": "github:aurelia/task-queue@0.2.2",
       "core-js": "npm:core-js@0.4.10"
     },
+    "github:jspm/nodelibs-fs@0.1.0": {
+      "assert": "npm:assert@1.3.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.0"
+    },
+    "github:jspm/nodelibs-path@0.1.0": {
+      "path-browserify": "npm:path-browserify@0.0.0"
+    },
     "github:jspm/nodelibs-process@0.1.0": {
       "process": "npm:process@0.10.0"
+    },
+    "github:jspm/nodelibs-util@0.1.0": {
+      "util": "npm:util@0.10.3"
+    },
+    "github:jspm/nodelibs-vm@0.1.0": {
+      "vm-browserify": "npm:vm-browserify@0.0.4"
     },
     "github:twbs/bootstrap@3.3.2": {
       "css": "github:systemjs/plugin-css@0.1.0",
       "jquery": "github:components/jquery@2.1.3"
     },
+    "npm:amdefine@0.1.0": {
+      "fs": "github:jspm/nodelibs-fs@0.1.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.0"
+    },
+    "npm:assert@1.3.0": {
+      "util": "npm:util@0.10.3"
+    },
+    "npm:async@0.2.10": {
+      "process": "github:jspm/nodelibs-process@0.1.0"
+    },
     "npm:core-js@0.4.10": {
+      "process": "github:jspm/nodelibs-process@0.1.0"
+    },
+    "npm:handlebars@2.0.0": {
+      "fs": "github:jspm/nodelibs-fs@0.1.0",
+      "optimist": "npm:optimist@0.3.7",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.0",
+      "uglify-js": "npm:uglify-js@2.3.6"
+    },
+    "npm:inherits@2.0.1": {
+      "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:jquery@2.1.3": {
+      "process": "github:jspm/nodelibs-process@0.1.0"
+    },
+    "npm:knockout@3.2.0": {
+      "process": "github:jspm/nodelibs-process@0.1.0"
+    },
+    "npm:optimist@0.3.7": {
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.0",
+      "wordwrap": "npm:wordwrap@0.0.2"
+    },
+    "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.0"
     },
     "npm:sanitize-caja@0.1.2": {
       "process": "github:jspm/nodelibs-process@0.1.0"
+    },
+    "npm:source-map@0.1.43": {
+      "amdefine": "npm:amdefine@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.0"
+    },
+    "npm:uglify-js@2.3.6": {
+      "async": "npm:async@0.2.10",
+      "fs": "github:jspm/nodelibs-fs@0.1.0",
+      "optimist": "npm:optimist@0.3.7",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.0",
+      "source-map": "npm:source-map@0.1.43",
+      "util": "github:jspm/nodelibs-util@0.1.0",
+      "vm": "github:jspm/nodelibs-vm@0.1.0"
+    },
+    "npm:util@0.10.3": {
+      "inherits": "npm:inherits@2.0.1",
+      "process": "github:jspm/nodelibs-process@0.1.0"
+    },
+    "npm:vm-browserify@0.0.4": {
+      "indexof": "npm:indexof@0.0.1"
     }
   }
 });
