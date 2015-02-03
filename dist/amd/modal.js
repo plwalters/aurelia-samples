@@ -1,4 +1,4 @@
-define(["exports", "./models"], function (exports, _models) {
+define(["exports", "aurelia-templating"], function (exports, _aureliaTemplating) {
   "use strict";
 
   var _prototypeProperties = function (child, staticProps, instanceProps) {
@@ -6,22 +6,38 @@ define(["exports", "./models"], function (exports, _models) {
     if (instanceProps) Object.defineProperties(child.prototype, instanceProps);
   };
 
-  var Models = _models.Models;
+  var Behavior = _aureliaTemplating.Behavior;
   var Modal = (function () {
     function Modal() {
       this.modal = new ModalObject();
-      this.showing;
       this.toggleShowing = function () {
         console.log(this.showing);this.showing = !this.showing;
       };
     }
 
-    _prototypeProperties(Modal, null, {
+    _prototypeProperties(Modal, {
+      metadata: {
+        value: function metadata() {
+          return Behavior.customElement("modal").withProperty("showing", "valueChanged", "modal");
+        },
+        writable: true,
+        enumerable: true,
+        configurable: true
+      }
+    }, {
       activate: {
         value: function activate(value) {
-          this.modal.showing = value.showing;
           this.toggle = value.toggle;
-          this.showing = this.modal.showing;
+          console.log(value);
+          this.showing = value.showing;
+        },
+        writable: true,
+        enumerable: true,
+        configurable: true
+      },
+      showingChanged: {
+        value: function showingChanged(hey) {
+          console.log("hey you - ", hey);
         },
         writable: true,
         enumerable: true,

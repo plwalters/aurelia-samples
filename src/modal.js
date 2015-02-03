@@ -1,15 +1,23 @@
-import {Models} from './models';
+import {Behavior} from 'aurelia-templating';
 
 export class Modal {
+  static metadata(){
+    return Behavior
+      .customElement('modal')
+      .withProperty('showing', 'valueChanged', 'modal');
+  }
+
 	constructor(){
     this.modal = new ModalObject();
-    this.showing;
     this.toggleShowing = function () { console.log(this.showing); this.showing = !this.showing; };
 	}
   activate(value){
-    this.modal.showing = value.showing;
     this.toggle = value.toggle;
-    this.showing = this.modal.showing;
+    console.log(value);
+    this.showing = value.showing;
+  }
+  showingChanged(hey){
+    console.log('hey you - ',hey);
   }
 }
 
