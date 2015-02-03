@@ -20,6 +20,12 @@ export class MarkdownComponentAttachedBehavior {
     this.converter = new showdown.converter();
   }
 
+  attached() {
+    console.log(this.value);
+    this.value.somethingElse();
+  }
+
+
   valueChanged(newValue){
     this.element.innerHTML = this.converter.makeHtml(
       newValue.value.split('\n').map((line) => line.trim()).join('\n')

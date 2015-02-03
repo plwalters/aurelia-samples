@@ -39,6 +39,15 @@ define(["exports", "aurelia-templating", "showdown", "prism"], function (exports
         configurable: true
       }
     }, {
+      attached: {
+        value: function attached() {
+          console.log(this.value);
+          this.value.somethingElse();
+        },
+        writable: true,
+        enumerable: true,
+        configurable: true
+      },
       valueChanged: {
         value: function valueChanged(newValue) {
           this.element.innerHTML = this.converter.makeHtml(newValue.value.split("\n").map(function (line) {

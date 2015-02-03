@@ -1,8 +1,8 @@
 <template>
   <import from='./column'></import>
+  <import from='./modal'></import>
 	<section>
 		<h2>${heading}</h2>
-
     <div class="container-fluid">
       <form class="col-sm-2">
         <div class="form-group" show.bind="showing">
@@ -18,6 +18,9 @@
         </div>
       </div>
     </div>
-    <button class="btn btn-info" click.delegate="toggleShow()">Toggle show</button>
+    <button class="btn btn-info" click.delegate="showModal()">Toggle Modal</button>
+    <div show.bind="showing" class="modal fade ${ showing ? 'in':'' }" style="display: block;">
+      <compose view-model="./modal" model.bind="{ showing: showing, toggle: showModal }"></compose>
+    </div>
 	</section>
 </template>
