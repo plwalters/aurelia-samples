@@ -26,6 +26,7 @@ System.config({
     "moment": "npm:moment@2.9.0",
     "prism": "github:LeaVerou/prism@gh-pages",
     "showdown": "github:showdownjs/showdown@0.3.4",
+    "sortable": "github:rubaxa/sortable@1.1.0",
     "github:aurelia/binding@0.2.2": {
       "aurelia-metadata": "github:aurelia/metadata@0.2.4",
       "aurelia-task-queue": "github:aurelia/task-queue@0.2.3"

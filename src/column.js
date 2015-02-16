@@ -1,4 +1,5 @@
 import {Models} from './models';
+import sortable from 'sortable';
 
 export class Column {
   constructor () {
@@ -14,5 +15,14 @@ export class Column {
 
   addWidget () {
   	this.column.widgets.push(new Models.Widget());
+  }
+
+  attached() {
+    var list = document.querySelectorAll(".column")[0];
+    console.log(list);
+    sortable.create(list, {
+      animation: 150,
+      draggable: '.widget-row'
+    });
   }
 }
