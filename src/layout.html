@@ -6,7 +6,7 @@
 		<h2>${heading}</h2>
     <div class="container-fluid">
       <form class="col-sm-2">
-        <div class="form-group" show.bind="showing">
+        <div class="form-group">
           <label>Choose # of Columns</label>
           <select class="form-control" selected-item.two-way="selectedColumns">
             <option repeat.for="option of availableColumns" value.bind="option" model.bind="option">${option.name}</option>

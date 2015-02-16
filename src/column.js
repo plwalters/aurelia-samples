@@ -15,14 +15,23 @@ export class Column {
 
   addWidget () {
   	this.column.widgets.push(new Models.Widget());
+    console.log(this.column.widgets);
   }
 
   attached() {
-    var list = document.querySelectorAll(".column")[0];
-    console.log(list);
-    sortable.create(list, {
+    sortable.create(this.el, {
       animation: 150,
-      draggable: '.widget-row'
+      draggable: '.widget-row',
+      onEnd: (evt) => {
+          this.column.widgets.move(evt.oldIndex, evt.newIndex);
+          console.log(this.column.widgets);
+      }
     });
   }
 }
+
+Array.prototype.move = function (old_index, new_index) {
+    var element = this[old_index];
+    this.splice(old_index, 1);
+    this.splice(new_index, 0, element);
+};
