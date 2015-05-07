@@ -146,3 +146,28 @@ section.au-enter-active {
     transform: translate3d(0, -4px, 0)
   }
 }
+
+section {
+    margin: 0 20px;
+}
+
+.navbar-nav li.loader {
+    margin: 12px 24px 0 6px;
+}
+
+.pictureDetail {
+    max-width: 425px;
+}
+
+.column {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+.column > .row {
+    padding: 8px;
+}
+.widget {
+    background-color: white;
+    border: 1px solid black;
+    padding: 2px;
+}

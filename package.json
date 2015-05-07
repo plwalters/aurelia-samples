@@ -55,12 +55,18 @@
       "aurelia-router": "github:aurelia/router@^0.8.0",
       "bootstrap": "github:twbs/bootstrap@^3.3.4",
       "css": "github:systemjs/plugin-css@^0.1.9",
-      "font-awesome": "npm:font-awesome@^4.3.0"
+      "font-awesome": "npm:font-awesome@^4.3.0",
+      "knockout": "github:knockout/knockout@^3.3.0",
+      "moment": "github:moment/moment@^2.10.2",
+      "prism": "npm:prism@^0.0.1",
+      "rubaxa/sortable": "github:rubaxa/sortable@^1.2.0",
+      "showdown": "npm:showdown@^0.5.0",
+      "sortable": "npm:sortable@^2.0.0"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.1.13",
       "babel-runtime": "npm:babel-runtime@^5.1.13",
-      "core-js": "npm:core-js@^0.9.4"
+      "core-js": "npm:core-js@^0.8.1"
     }
   }
 }
