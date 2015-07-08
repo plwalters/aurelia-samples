@@ -26,13 +26,21 @@ export class Index{
   nextStep(){
     var self = this;
     if (this.activeStep.id === this.steps.length) {
+        this.activeStep = this.steps[0];//jrt
       self.wizardShowing = false;
     } else {
       this.activeStep = this.steps[this.activeStep.id];
     }
   }
   closeWizard(){
-    this.wizardShowing = false;
+    //  this.wizardShowing = false;
+    // added logic to close -- jrt
+    if (this.activeStep.id === this.steps.length) {
+        this.activeStep = this.steps[0];//jrt
+      self.wizardShowing = false;
+    } else {
+      this.wizardShowing = false;
+    }
   }
 }
 
