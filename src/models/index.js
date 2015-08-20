@@ -1,4 +1,4 @@
-class Column {
+export class ColumnModel {
   constructor(id, name, widgets, width) {
     this.id = id;
     this.name = name;
@@ -7,16 +7,10 @@ class Column {
   }
 }
 
-class Widget {
+export class WidgetModel {
   constructor(id, name, width) {
     this.id = id;
     this.name = name;
     this.width = width ? width : '12';
   }
-}
-
-var Models = { Column: Column, Widget: Widget };
-
-export {
-  Models
 }

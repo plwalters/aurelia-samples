@@ -1,6 +1,5 @@
 import {customElement, inject} from 'aurelia-framework';
 
-@customElement('html-render')
 @inject(Element)
 export class HtmlRender{
   constructor(element){

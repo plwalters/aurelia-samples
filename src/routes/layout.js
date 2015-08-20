@@ -1,4 +1,4 @@
-import {Models} from './models';
+import {ColumnModel, WidgetModel} from 'models/index';
 import {bindable, inject} from 'aurelia-framework';
 
 export class Layout{
@@ -12,14 +12,14 @@ export class Layout{
   constructor(){
     this.availableColumns = [
       new Option ('1', '1 Column',
-                  [new Models.Column(0, 'Column 1', [new Models.Widget('1', 'Widget 1', '12')], '12')]),
+                  [new ColumnModel(0, 'Column 1', [new WidgetModel('1', 'Widget 1', '12')], '12')]),
       new Option ('2', '2 Columns',
-                  [new Models.Column(1, 'Column 1', [new Models.Widget('1', 'Widget 1', '12')], '6'),
-                  new Models.Column(2, 'Column 2', [new Models.Widget('2', 'Widget 2', '6'), new Models.Widget('4', 'Widget 4', '6')], '6')]),
+                  [new ColumnModel(1, 'Column 1', [new WidgetModel('1', 'Widget 1', '12')], '6'),
+                  new ColumnModel(2, 'Column 2', [new WidgetModel('2', 'Widget 2', '6'), new WidgetModel('4', 'Widget 4', '6')], '6')]),
       new Option ('3', '3 Columns',
-                  [new Models.Column(1, 'Column 1', [new Models.Widget('1', 'Widget 1', '12')], '4'),
-                  new Models.Column(2, 'Column 2', [new Models.Widget('2', 'Widget 2', '6'), new Models.Widget('4', 'Widget 4', '6')], '4'),
-                  new Models.Column(3, 'Column 3', [new Models.Widget('3', 'Widget 3', '12')], '4')])
+                  [new ColumnModel(1, 'Column 1', [new WidgetModel('1', 'Widget 1', '12')], '4'),
+                  new ColumnModel(2, 'Column 2', [new WidgetModel('2', 'Widget 2', '6'), new WidgetModel('4', 'Widget 4', '6')], '4'),
+                  new ColumnModel(3, 'Column 3', [new WidgetModel('3', 'Widget 3', '12')], '4')])
     ];
     this.selectedColumns = this.availableColumns[0];
   }

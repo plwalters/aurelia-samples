@@ -1,8 +1,8 @@
-import {Models} from './models';
+import {WidgetModel} from 'models/index';
 
 export class Widget {
   constructor () {
-    this.widget = new Models.Widget();
+    this.widget = new WidgetModel();
   }
 
   activate(widget) {
