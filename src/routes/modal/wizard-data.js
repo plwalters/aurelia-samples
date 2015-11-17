@@ -1,4 +1,4 @@
-export class Wizard{
+export class WizardData {
   name = 'Patrick';
   age = '30';
   skill = 'Not much';

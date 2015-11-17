@@ -1,0 +1,15 @@
+<template>
+  <require from="./person-information"></require>
+  <ai-dialog>
+    <ai-dialog-header>
+      Simple Modal Example
+    </ai-dialog-header>
+    <ai-dialog-body>
+      <person-information></person-information>
+    </ai-dialog-body>
+    <ai-dialog-footer>
+      <button click.trigger="controller.cancel()">Cancel</button>
+      <button click.trigger="controller.ok()">Ok</button>
+    </ai-dialog-footer>
+  </ai-dialog>
+</template>

@@ -2,7 +2,7 @@ export function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
     .developmentLogging()
-    .plugin('aurelia-bs-modal');
+    .plugin('aurelia-dialog');
 
   aurelia.start().then(a => a.setRoot());
 }

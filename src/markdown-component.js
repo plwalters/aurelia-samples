@@ -5,9 +5,7 @@ import showdown from 'showdown';
 @inject(Element)
 export class MarkdownComponent {
   constructor(element) {
-    console.log('hey!!!')
     this.element = element;
-    console.log(element);
     // An instance of the converter
     this.converter = new showdown.converter();
   }

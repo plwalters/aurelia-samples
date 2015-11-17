@@ -1,0 +1,14 @@
+<template>
+  <ai-dialog>
+    <ai-dialog-header>
+      ${activeStep.title}
+    </ai-dialog-header>
+    <ai-dialog-body>
+      <compose view-model.bind="activeStep.path"></compose>
+    </ai-dialog-body>
+    <ai-dialog-footer>
+      <button click.trigger="controller.cancel()">Cancel</button>
+      <button click.trigger="nextStep()">${nextOrSave}</button>
+    </ai-dialog-footer>
+  </ai-dialog>
+</template>
