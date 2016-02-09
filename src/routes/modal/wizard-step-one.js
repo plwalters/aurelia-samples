@@ -1,7 +1,7 @@
 import {inject} from 'aurelia-framework';
-import {Wizard} from './wizard';
+import {WizardData} from 'routes/modal/wizard-data';
 
-@inject(Wizard)
+@inject(WizardData)
 export class WizardStepOne{
   constructor(wizard){
     this.wizard = wizard;
